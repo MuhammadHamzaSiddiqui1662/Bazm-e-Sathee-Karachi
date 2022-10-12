@@ -15,18 +15,22 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { makeStyles } from '@mui/styles';
 import logo from "./../../assets/images/logo.jpg"
-import { ABOUT_US, CONTACT_US, REGISTER } from '../../utils/constants';
+import { ABOUT_US, CONTACT_US, GALLERY, REGISTER } from '../../utils/constants';
 
 const drawerWidth = 240;
 // const navItems = ['Register', 'About', 'Contact'];
 const navItems = [
     {
+        title: "About",
+        link: `#${ABOUT_US}`
+    },
+    {
         title: "Register",
         link: `#${REGISTER}`
     },
     {
-        title: "About",
-        link: `#${ABOUT_US}`
+        title: "Gallery",
+        link: `#${GALLERY}`
     },
     {
         title: "Contact",
@@ -57,7 +61,7 @@ function DrawerAppBar(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" sx={{ my: 2, fontWeight: "bolder" }}>
-                Bazm-e-Sathee
+                Bazm e Sathee
             </Typography>
             <Divider />
             <List>
@@ -93,7 +97,7 @@ function DrawerAppBar(props) {
                         component="div"
                         sx={{ flexGrow: 1, fontWeight: "bolder", display: { xs: 'block', sm: 'block' } }}
                     >
-                        Bazm-e-Sathee (Karachi)
+                        Bazm e Sathee
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (

@@ -7,6 +7,7 @@ import img3 from "./../../../../assets/images/gallerySection/3.jpeg";
 import img4 from "./../../../../assets/images/gallerySection/4.jpeg";
 import img5 from "./../../../../assets/images/gallerySection/5.jpeg";
 import img6 from "./../../../../assets/images/gallerySection/6.jpeg";
+import { GALLERY } from "../../../../utils/constants";
 
 
 const useStyle = makeStyles(theme => ({
@@ -36,7 +37,7 @@ const useStyle = makeStyles(theme => ({
 const GallerySection = () => {
     const classes = useStyle()
     return (
-        <div className={classes.root}>
+        <div id={GALLERY} className={classes.root}>
             <Typography variant="h3" className={classes.heading}>
                 Gallery
             </Typography>

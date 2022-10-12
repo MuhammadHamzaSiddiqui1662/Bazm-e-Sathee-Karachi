@@ -4,8 +4,10 @@ import { makeStyles } from "@mui/styles";
 import { Container } from "@mui/system";
 import childrenExpoBanner from "./../../assets/images/childrenExpoBanner.jpeg"
 import displayLogo from "./../../assets/images/displayLogo.jpg"
+import promo from "./../../assets/videos/bazmesatheePromo.mp4"
 import GallerySection from "./Sections/UpComingEventSection/UpcomingEventSection";
 import { ABOUT_US, REGISTER } from "../../utils/constants";
+import Slider from "../../components/Slider/Slider";
 
 const useStyle = makeStyles(theme => ({
     root: {
@@ -39,6 +41,14 @@ const useStyle = makeStyles(theme => ({
             width: "100%",
         }
     },
+    video: {
+        maxWidth: "40%",
+        backgroundColor: "#555",
+        [theme.breakpoints.down("sm")]: {
+            maxWidth: "100%",
+            width: "100%",
+        }
+    },
     sectionDetails: {
         // width: "60%",
         color: "#777"
@@ -50,6 +60,9 @@ const LandingPage = () => {
     return (
         <div className={classes.root}>
             <Container className={classes.root} >
+                <div className={classes.section}>
+                    <Slider />
+                </div>
                 <div id={ABOUT_US} className={classes.section}>
                     <Typography variant="h3" className={classes.sectionHeading}>
                         About Us
@@ -58,13 +71,16 @@ const LandingPage = () => {
                         <div className={classes.sectionDetails}>
 
                             <Typography className={classes.eventDetails}>
-                                The name of Bazm-e-Sathee does not require any recognition in the context of its academic and ideological services to students in the educational Schools & Institutes of Pakistan.
+                                The name of Bazm e Sathee does not require any recognition in the context of its academic and ideological services to students in the educational Schools & Institutes of Pakistan.
                             </Typography>
                             <br />
                             <Typography className={classes.eventDetails}>
                                 Bazm e Sathee is a NGO working for the better future of Pakistan and Muslim Ummah. With a Motto of Be Good, Spread Goodness, Bazm organizes various activities for students of schools across Pakistan like talent awards, children expo, picnics, quizzes and activities related to different days, parties, 40 days prayer challenges, and many other similar activities. As a result of these activities, children get intellectual, physical, and ideological training, they develop love for their country and Islam and increase their knowledge. As a result of which, in the future, the Muslim Ummah and the homeland of Pakistan become talented and When virtuous youth meet, they devote their energies for the betterment and bright future of Homeland and Ummah                            </Typography>
                         </div>
-                        <img src={displayLogo} alt="" className={classes.image}></img>
+                        {/* <img src={displayLogo} alt="" className={classes.image}></img> */}
+                        <video className={classes.video} controls autoPlay muted loop>
+                            <source src={promo} type="video/mp4" />
+                        </video>
                     </div>
                 </div>
                 <div className={classes.section}>
@@ -76,7 +92,7 @@ const LandingPage = () => {
                         <div className={classes.sectionDetails}>
                             <Typography variant="h5" sx={{ mb: 1.5, color: "#444" }}>Chidren Expo Karachi Season 2</Typography>
                             <Typography className={classes.eventDetails}>
-                                The name of Bazm-e-Sathee does not require any recognition in the context of its academic and ideological services to students in the educational Schools & Institutes of Pakistan.
+                                The name of Bazm e Sathee does not require any recognition in the context of its academic and ideological services to students in the educational Schools & Institutes of Pakistan.
                                 We, cordially invites you to be a part of our Children’s Expo Season II which shall be InshaAllah held on 27th of October, 2022 at Askari Amusement Park Karachi.
                                 Continuing our Legacy, we are organizing a Mega Event consisting of Competitions, Games and Workshops will be held. Moreover, Speech Competition, Quiz Competition, Tableaus, Project Exhibition, Arts Competition, Pictorial Writing, Neelam Ghar, Lucy Draw and many other things.
                             </Typography>

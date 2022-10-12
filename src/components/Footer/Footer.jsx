@@ -13,6 +13,7 @@ import { Theme, Box, Container, Typography, IconButton, Grid } from "@mui/materi
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 // import TwitterIcon from '@mui/icons-material/Twitter';
 import { CONTACT_US } from "../../utils/constants";
 
@@ -64,10 +65,10 @@ const Footer = () => {
             {/* <PaperBg /> */}
             <Container maxWidth="lg">
                 <Typography className={classes.text} align="center" variant="h6" sx={{ mt: 1, mb: 1 }}>
-                    It only takes a few minutes to get started with us. Understand your community, start free, today.
+                    F-206 Saleem Avenue Main University Road Block 13-B Gulshan-e-Iqbal- Pakistan
                 </Typography>
                 <div className={classes.flexGrid}>
-                    <IconButton size="small" href={"#"} target="__blank">
+                    <IconButton size="small" href={"https://www.facebook.com/bazmesatheekhi/"} target="__blank">
                         <FacebookIcon />
                     </IconButton>
                     <IconButton size="small" href={"mailto: bazmkhi@gmail.com"}>
@@ -75,6 +76,9 @@ const Footer = () => {
                     </IconButton>
                     <IconButton size="small" href={"tel:+923158508658"}>
                         <WhatsAppIcon />
+                    </IconButton>
+                    <IconButton size="small" href={"https://www.facebook.com/monthlysathee"} target="__blank">
+                        <AutoStoriesIcon />
                     </IconButton>
                     {/* <IconButton size="small" href={TWITTER_URL} target="__blank">
                         <img src={Twitter} alt="" className={classes.icon} />
