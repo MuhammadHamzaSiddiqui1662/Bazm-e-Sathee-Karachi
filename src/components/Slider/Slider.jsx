@@ -9,10 +9,10 @@ const banners = [
         _id: 1,
         link: banner1,
     },
-    {
-        _id: 2,
-        link: banner2,
-    }
+    // {
+    //     _id: 2,
+    //     link: banner2,
+    // }
 ]
 
 const useStyle = makeStyles(theme => ({
