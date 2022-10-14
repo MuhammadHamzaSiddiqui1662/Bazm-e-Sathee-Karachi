@@ -65,7 +65,7 @@ const Footer = () => {
             {/* <PaperBg /> */}
             <Container maxWidth="lg">
                 <Typography className={classes.text} align="center" variant="h6" sx={{ mt: 1, mb: 1 }}>
-                    F-206 Saleem Avenue Main University Road Block 13-B Gulshan-e-Iqbal- Pakistan
+                    F-106 Saleem Avenue Main University Road Block 13-B Gulshan-e-Iqbal- Pakistan
                 </Typography>
                 <div className={classes.flexGrid}>
                     <IconButton size="small" href={"https://www.facebook.com/bazmesatheekhi/"} target="__blank">
@@ -95,7 +95,7 @@ const Footer = () => {
                 </div>
 
                 <Typography className={classes.text} align="center" variant="h6" sx={{ mt: 0 }}>
-                    © 2022 Bazam e Sathi (Karachi). All rights reserved.
+                    © 2022 Bazam e Sathee. All rights reserved.
                 </Typography>
             </Container>
         </Box>
