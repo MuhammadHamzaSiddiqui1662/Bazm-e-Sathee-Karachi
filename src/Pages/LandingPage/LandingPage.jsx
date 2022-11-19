@@ -93,7 +93,7 @@ const LandingPage = () => {
                             <Typography variant="h5" sx={{ mb: 1.5, color: "#444" }}>Chidren Expo Karachi Season 2</Typography>
                             <Typography className={classes.eventDetails}>
                                 The name of Bazm e Sathee does not require any recognition in the context of its academic and ideological services to students in the educational Schools & Institutes of Pakistan.
-                                We, cordially invites you to be a part of our Children’s Expo Season II which shall be InshaAllah held on 27th of October, 2022 at Askari Amusement Park Karachi.
+                                We, cordially invites you to be a part of our Children’s Expo Season II which shall be InshaAllah held on 24th of November, 2022 at Askari Amusement Park Karachi.
                                 Continuing our Legacy, we are organizing a Mega Event consisting of Competitions, Games and Workshops will be held. Moreover, Speech Competition, Quiz Competition, Tableaus, Project Exhibition, Arts Competition, Pictorial Writing, Neelam Ghar, Lucy Draw and many other things.
                             </Typography>
                         </div>
